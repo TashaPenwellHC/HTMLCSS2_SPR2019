@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a canvas</title>
+    <style>
+        .square {
+            border: 3px solid red;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+<canvas id = "square" class = "square" width = "300" height = "300">Sorry, no browser support</canvas>
+
+
+
+
+<script>
+   var canvas = document.getElementById ("square");
+   var context = canvas.getContext("2d");
+   context.strokeStyle = "green";
+   context.fillStyle = "yellow";
+   context.fillRect(10, 10, 100, 100);
+   context.strokeRect(10, 10, 100, 100);
+
+
+        
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+</html>
