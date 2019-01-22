@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a canvas</title>
+    <style>
+        /* .square {
+            border: 3px solid red;
+        } */
+
+        /* .square2 {
+            border: none;
+        } */
+
+        /* .dogImage {
+            border: 4px dashed brown;
+        } */
+
+        /* .gradient{
+            border: 10px purple solid;
+        } */
+    </style>
+</head>
+
+<body>
+
+<!-- <canvas id = "square" class = "square" width = "300" height = "300">Sorry, no browser support</canvas> -->
+
+<!-- <canvas id = "square2" class = "square2" width = "400" height = "250">Sorry, not supported</canvas> -->
+
+
+<!-- <canvas id = "dogImage" class = "dogImage" width = "950" height="800">Sorry, no browser support</canvas> -->
+
+
+<!-- <canvas id = "gradient" class = "gradient" width = "700" height = "400">Sorry, no support</canvas> -->
+
+
+
+
+
+
+
+
+
+<!-- <script>
+   var canvas = document.getElementById ("square");
+   var context = canvas.getContext("2d");
+   context.strokeStyle = "green";
+   context.fillStyle = "yellow";
+   context.fillRect(10, 10, 100, 100);
+   context.strokeRect(10, 10, 100, 100);
+
+
+        
+
+</script> -->
+
+<!-- <script>
+var canvas = document.getElementById ("square2");
+var context = canvas.getContext("2d");
+context.strokeStyle = "purple";
+context.fillStyle = "red";
+context.fillRect(10, 50, 100, 100);
+context.strokeRect(50, 10, 300, 100);
+
+</script> -->
+
+
+<!-- <script>
+    var canvas = document.getElementById("dogImage");
+    var ctx = canvas.getContext("2d");
+
+    var img = new Image();
+    img.src = "/images/dog-100x100.png";
+    img.onload = function () {
+        var pattern = ctx.createPattern(img, 'repeat');
+        ctx.fillStyle = pattern;
+        ctx.fillRect(0, 0, 300, 300);
+    }
+    
+
+
+</script> -->
+
+
+<!-- <script>
+ function drawGradient() {
+     var canvas = document.getElementById("gradient");
+     var context = canvas.getContext("2d");
+     context.strokeStyle = "yellow";
+     var gradient = context.createLinearGradient (0, 0, 0, 200);
+     gradient.addColorStop(0, "blue");
+     gradient.addColorStop(1, "white");
+     context.fillStyle = gradient;
+     context.fillRect(10, 10, 100, 100);
+     context.strokeRect(10, 10, 100, 100);
+
+ }
+
+
+
+</script> -->
+
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/createLinearGradient -->
+<!-- <script>
+var canvas = document.getElementById('gradient1');
+var ctx = canvas.getContext('2d');
+
+//create a linear gradient
+//the start gradient point is at x = 20, y = 0
+//the end gradient point is x=220, y=0
+var gradient = ctx.createLinearGradient(20, 0, 200, 0);
+
+//add three color stops
+gradient.addColorStop(0, 'green');
+gradient.addColorStop(.5, 'blue');
+gradient.addColorStop(1, 'green');
+
+//set the fill style and draw a rectangle
+ctx.fillStyle = gradient;
+ctx.fillRect(20, 20, 200, 100);
+
+
+
+
+</script> -->
+
+
+</body>
+
+
+
+
+</html>
