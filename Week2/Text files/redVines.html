@@ -14,6 +14,13 @@
         margin: 100px;
     }
 
+
+    .redVines3 {
+        border: 10px red dotted;
+        background-color: yellow;
+        margin: 30px;
+    }
+
     </style>
 </head>
 
@@ -23,7 +30,12 @@
 
     <!-- <canvas id = "redVines2" class = "redVinesVideo" width = "1300" height = "500"> </canvas> 
 
+    
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/SPZRtlqBgYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <canvas id = "redVines3" class = "redVines3" width = "1300" height = "300"></canvas>
+    <img src = "/images/redVinesLogo.png" id = "redVinesLogo"
 
     
 
@@ -34,6 +46,7 @@ var ctx = document.getElementById('redVines').getContext ('2d');
 ctx.font = "50px arial";
 ctx.fillStyle = "red";
 ctx.fillText("Red Vines", 100, 100);
+
 
 // ctx.fillStyle = "black";
 // ctx.fillText("Candy", 200, 300);
@@ -68,7 +81,7 @@ ctx.fillText("Red Vines", 100, 100);
 //     ctx.strokeText('Red Vines', 790, 40);
 
 
-</script>
+// </script>
 
 <!-- <script>
     var ctx = document.getElementById('redVinesVideo').getContext('2d');
@@ -81,6 +94,17 @@ ctx.fillText("Red Vines", 100, 100);
 </script> -->
 
 
+<script>
+window.addEventListener("load", drawImageToCanvas, false);
+
+function drawImageToCanvas() {
+    var canvas = document.getElementById("redVines");
+    var context = canvas.getContext("2d");
+    var image = document.getElementById("redVinesLogo");
+    context.drawImage(image, 0, 0);
+}
+
+</script>
 
 
 </html>
