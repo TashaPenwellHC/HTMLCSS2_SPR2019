@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+
+       .app-layout {
+           display: grid;
+           grid-template-columns: repeat(4, 1fr);
+           grid-template-rows: 50vh;
+           grid-template-areas: "search replies messages tweets";
+       }
+
+       .search {
+           grid-area: search;
+           background-color: teal;
+           /* padding: 30px; */
+               }
+    
+        .replies {
+            grid-area: replies;
+            background-color: purple;
+            /* padding: 100px 5px; */
+
+        }
+
+        .messages {
+            grid-area: messages;
+            background-color: violet;
+            color: white;
+        }
+
+        .tweets {
+            grid-area: tweets;
+            background-color: yellow;
+        }
+   
+   </style>
+</head>
+<body>
+    
+        <div class = "app-layout">
+                <div class = "tweets">Tweet</div>
+                <div class = "replies">Replies</div>
+                <div class = "search">Search</div>
+                <div class = "messages">Messages</div>
+                
+            </div>
+
+
+</body>
+</html>
