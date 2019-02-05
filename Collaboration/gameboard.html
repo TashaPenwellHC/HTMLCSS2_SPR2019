@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    :root {
+        font-size: 15px;
+    }
+   .gameboard{
+       display: grid;
+       grid-gap: 10px;
+       grid-template-columns: repeat(6, 1fr);
+       grid-template-areas: "top top top top top top"
+                            "lside lside center center rside rside"
+                            "lside lside center center rside rside"
+                            "bottom bottom bottom bottom bottom bottom"
+                            
+   }
+
+
+
+   .top {
+       background-color: greenyellow;
+       display: flex;
+       font-size: 4em;
+   }
+
+   .lside {
+       background-color:hotpink;
+       display: flex;
+       font-size: 4em;
+   }
+
+   .rside {
+       background-color: #bada55;
+       grid-area: rside;
+   }
+
+   .center {
+       background-color: black;
+       grid-area: center;
+
+
+   }
+
+   /* .square1 {
+       background-color: rosybrown;
+   }
+
+   .square2 {
+       background-color: burlywood;
+   }
+
+   .row2 {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+        flex: 2 0 100px;
+        font-size: 100px;
+
+   }
+
+   .row1 {
+       display: grid;
+       grid-template-columns: 25vw 25vw 25vw 25vw;
+       grid-template-rows: 100px;
+       /* grid-template-rows: 25vh 50vh 25vh; */
+
+   }
+    */
+   </style>
+</head>
+<body>
+
+    <div class = "gameboard">
+            <!--use .square{$}*5 to create quick list of div-->
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="top"><img src = "dog.svg"></div>
+        <div class="lside"><img src = "noun_Coffee_169719.svg"></div>
+        
+        <div class="center"></div>
+        <div class="center"></div>
+        <div class="rside"><img src = "noun_Coffee Pot_30x30.svg"></div>
+        
+        
+    </div>
+    </div>  
+
+
+
+    <!-- NEED TO DO:
+    CREATE BOARD GAME CENTER WITH LOGO OR NAME -->
+
+    <!-- <script>
+            function draw() {
+                var ctx = document.getElementById('boardCenter').getContext('2d');
+                ctx.font = '48px serif';
+                ctx.strokeText("Tashas board game", 500, 500);
+            }
+            draw();
+            </script> -->
+    
+</body>
+</html>
