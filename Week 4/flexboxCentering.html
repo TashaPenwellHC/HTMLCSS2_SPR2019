@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        :root{
+            font-size: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row-reverse; 
+            align-items: center; /*NOT WORKING AND NOT SURE WHY*/
+                      
+        }
+
+           
+        .letters {
+            font-size: 5em;
+            flex: 1 0 auto;
+        }
+
+        .a, .d {
+            background-color:aqua;
+        }
+
+        .b, .e {
+            background-color:bisque;
+            }
+        
+        .c, .f {
+            background-color: #bada55;
+        }
+
+        .g {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "flex-container">
+            <div class=" letters a">A</div>
+            <div class="letters b">B</div>
+            <div class="letters c">C</div>
+            <div class="letters d">D</div>
+            <div class="letters e">E</div>
+            <div class="letters f">F</div>
+            <div class="letters g">G</div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
