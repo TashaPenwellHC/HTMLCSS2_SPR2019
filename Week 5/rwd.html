@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=.43"> -->
+<style>
+
+:root {
+    background-color: antiquewhite;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerHeader {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 20px 20vh 20px;
+    /* grid-gap: 1em; */
+
+}
+
+.containerBody {
+    display: grid;
+    grid-template-columns: 1% 1fr 40%;
+    grid-template-rows: 10% 1fr 40px;
+    grid-gap: 1em;
+    background-color: yellow;
+}
+
+.navWalk {
+    display: flex;
+    flex-direction: row;
+    background-color: burlywood;
+    text-align: center;
+    list-style: none;
+    justify-content: space-evenly;
+    /*see https://css-tricks.com/snippets/css/a-guide-to-flexbox/ for information on justify content for nav */
+}
+
+
+
+.heading {
+    grid-column: 1/ span 3;
+    margin: 1px;
+    grid-row: 2;
+    font-size: 3em;
+    text-align: center;
+    background-color: white;
+}
+.dogImage {
+  grid-column: 1/ span 2;
+  grid-row: 1/ span 1;
+  background-color: white;
+
+}
+.aside {
+  background-color: lightblue;
+  grid-column: 3;
+  grid-row: 1;
+  padding: 2px;
+  margin: 5px;
+}
+
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    text-align: center;
+    
+  }
+  
+  
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+
+  .heading {
+    grid-column: 1/ span 3;
+    padding: 0 10%;
+    grid-row: 2;
+    font-size: 1em;
+    text-align: center;
+
+  }
+}
+@media only all and (max-width:500px orientation= landscape) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5%;
+    text-align: center;
+    
+  }
+
+  .heading {
+    grid-column: 1/ span 3;
+    padding: 0 10%;
+    grid-row: 2;
+    font-size: 1em;
+    text-align: center;
+}
+}
+</style>
+
+<script src = "picturefill.js" async></script>
+</head>
+<body>
+
+       
+
+<div class = "containerHeader">
+<div class = "heading">
+  Walking the Dog to the Park
+  <!-- <h3>Resize the browser window</h3> -->
+</div>
+</div>
+
+<nav class = "navWalk">
+        <li >The Walk</li>
+        <li >The Dog</li>
+        <li >The Route</li>
+        <li >Gallery</li>
+          
+</nav>
+
+
+<div class = "containerBody">
+  <div class="dogImage">
+     <img src="dog.svg">
+  </div>
+
+  <div class="aside">
+    <h2>What?</h2>
+    <p>We're a dog walking service that help busy people make sure Fido get's their walk in</p>
+    <h2>Where?</h2>
+    <p>We will pick up your dog from your home and take Fido to the local dog park</p>
+    <h2>Price?</h2>
+    <p>Our rate is $20/week per dog</p>
+  </div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
