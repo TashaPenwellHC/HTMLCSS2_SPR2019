@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 5px;
+        border: black solid 10px;
+    
+    }
+
+    .svg {
+        grid-column: 1;
+        grid-row: 1;
+        border: black dashed 5px;
+    }
+
+    .pixlr {
+        grid-column: 2 / 3;
+        grid-row: 1;
+        border: black dotted 3px;
+        padding: 20px;
+    }
+
+    .canvas {
+        grid-column: 1;
+        grid-row: 2;
+        border: black dashed 3px;
+    }
+
+    .htmltext {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        border: rgb(221, 12, 176) double 3px;
+        padding: 50px;
+        }
+    p {
+        background-color: black;
+        font-size: 40px;
+        color: white;
+
+
+    }
+
+    .p2 {
+        display: flex;
+        flex-direction: row;
+        background-image: url(rocks.jpg);
+        color: white;
+        font-size: 30px;
+        height: 100%;
+        border: purple solid 10px;
+        
+    }
+   </style>
+
+    <title>What Translates?</title>
+</head>
+<body>
+
+    <h1 style = "text-align: center">Which Items Below Will Translate?</h1>
+
+<div class = "container">  <!--REVIEW ON CSS GRID:  WHAT HAPPENS IF I DON'T INCLUDE THE DIV CLASS OF CONTAINER? -->
+    
+    <img class = "svg" src = "svgImage.svg">  <!--QUESTION:  WILL TEXT ON A SVG IMAGE TRANSLATE?-->
+    <img class = "pixlr" src = "pixlr.jpg">  <!--QUESTION:  WILL TEXT ON A JPG TRANSLATE?-->
+
+    <canvas class = "canvas" id = "canvas" width = "400" height="150"></canvas>  <!--QUESTION:  WILL TEXT ON A CANVAS TRANSLATE?-->
+
+
+    <p class = "htmltext">This is HTML</p> <!--QUESTION:  WILL TEXT IN HTML TRANSLATE?-->
+
+    <p class = "p2">this is HTML on JPG</p> <!--QUESTION:  THIS IS HTML W/ JPG BACKGROUND.  WILL IT TRANSLATE?-->
+
+        
+
+    <script>
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d')
+        ctx.font = "50px serif";
+        ctx.strokeText('This is CANVAS', 50, 90);
+    </script>
+
+</div>
+</body>
+</html>
